@@ -42,7 +42,6 @@ class AccountSecured:
         masking = "****" + self.__your_pin[-4:]
         print(f"Masked account information: {masking} ")
 
-
-
-
+#Running the code
+#Onjects are created in a different file for easier **Testing
 
