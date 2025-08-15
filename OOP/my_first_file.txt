@@ -1,2 +1,0 @@
-Brand new file!
-Learning Python file handling.
