@@ -33,6 +33,6 @@ class Pin(Auth):
         else:
             print("Access denied. Authentication failed")
  
-authentication = [Pass(), Pin()]
+authentication = [Auth(), Pass(), Pin()]
 for authen in authentication:
     authen.login()
