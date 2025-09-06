@@ -32,4 +32,3 @@ tools = [VirusScan(), FirewallRules(), IntrusionDetection()]
 #Loop through each tool and run the scan
 for tool in tools:
     perform_scan(tool)
-    
