@@ -1,4 +1,5 @@
 def bmiComputer():
+    print("Welcome to the BMI Calculator\n")
     w = float(input("Enter your weight in Kilograms: "))
     h = float(input("Enter your height in meters: "))
     BMI = w / h**2
@@ -12,4 +13,4 @@ def bmiComputer():
     else:
         print(f"Your BMI is {BMI:.2f}. You are obese.")
 
-bmiComputer()
+bmiComputer() 
