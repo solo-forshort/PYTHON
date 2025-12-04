@@ -1,4 +1,6 @@
+from EncBankGroup import AccountSecured
 import tkinter as tk
+from tkinter import messagebox
 
 ### step 1
 #create the main window
@@ -12,8 +14,18 @@ app.geometry("400x300") #Width x Height
 label = tk.Label(app, text="Enter your PIN")
 label.pack(pady=10)
 
-#Entry for PIN input
-# pin_entry = 
+pin_entry = tk.Entry(app, show="*")
+pin_entry.pack(pady=5)
+
+def check_balance():
+    pin = pin_entry.get()
+    if pin == "1234":  # temporary test PIN
+        messagebox.showinfo("Balance", "Your balance is $500")
+    else:
+        messagebox.showerror("Error", "Incorrect PIN")
+
+check_btn = tk.Button(app, text="Check Balance", command=check_balance)
+check_btn.pack(pady=10)
 
 #Run the App
 app.mainloop()

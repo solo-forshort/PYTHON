@@ -16,6 +16,7 @@ class Pass(Auth):
             print("Access granted. Authentication successful,")
         else:
             print("Incorrect username or password.")
+            print("Authentication failed")
         print("-" * 40)
 
 
@@ -25,13 +26,14 @@ class Pin(Auth):
         self.uname = uname
 
     def login(self):
-        print("Pin class Method!\n")
+        print("\nPin class Method!\n")
         username = input("Enter username: ")
         PIN = input("Enter a 4-digit Pin: ")
         if username == self.uname and PIN == self.pword:
             print("Access granted. Authentication successful")
         else:
             print("Access denied. Authentication failed")
+        print("-" * 40)
  
 authentication = [Auth(), Pass(), Pin()]
 for authen in authentication:
