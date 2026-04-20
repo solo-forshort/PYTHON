@@ -9,7 +9,7 @@ def main():
         print("\n  MENU")
         print("1. Check Balance. ")
         print("2. Change user Pin. ")
-        print("3. check masked info")
+        print("3. Check masked PIN info")
         print("4. Exit")
 
         try:
@@ -24,7 +24,7 @@ def main():
         elif option == 2:
             account.change_USER_PIN()
         elif option == 3:
-            account.acount_masking()
+            account.account_masking()
         elif option == 4:
             print("Exiting...")
             break
