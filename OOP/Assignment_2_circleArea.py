@@ -6,6 +6,3 @@ def circleArea():
     print(f"Area of the circle is: {area} msquare\n")
 
 circleArea()
-
-
-
